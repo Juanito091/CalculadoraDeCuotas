@@ -1,0 +1,30 @@
+{
+    "metodosPago": {
+        "efectivo": {
+            "descuento": 0.10,
+            "cuotasDisponibles": [1]
+        },
+        "tarjeta-credito": {
+            "interes": 0.05,
+            "cuotasDisponibles": [1, 3, 6, 9, 12]
+        },
+        "tarjeta-debito": {
+            "interes": 0,
+            "cuotasDisponibles": [1]
+        },
+        "transferencia": {
+            "descuento": 0.05,
+            "cuotasDisponibles": [1]
+        }
+    },
+    "recargosPorCuota": {
+        "3": 0.0688,
+        "6": 0.1399,
+        "9": 0.2152,
+        "12": 0.2950
+    },
+    "ultimaSeleccion": {
+        "metodo": "tarjeta-credito",
+        "cuotas": 1
+    }
+}
