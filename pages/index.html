@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Métodos de Pago</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div id="simulador" class="simulador">
+        <h1>Simulador de Métodos de Pago</h1>
+
+        <label for="precio">Precio del Producto:</label>
+        <input type="number" id="precio" placeholder="Ingrese el precio" min="0">
+
+        <label for="metodo">Seleccione el Método de Pago:</label>
+        <select id="metodo">
+            <option value="efectivo">Efectivo (10% Descuento)</option>
+            <option value="tarjeta-credito">Tarjeta de Crédito (Recargo)</option>
+            <option value="tarjeta-debito">Tarjeta de Débito</option>
+            <option value="transferencia">Transferencia Bancaria (5% Descuento)</option>
+        </select>
+
+        <label for="cuotas">Número de Cuotas:</label>
+        <select id="cuotas"></select>
+
+        <!-- Recargo dinámico -->
+        <div id="detalleRecargo" class="detalle-recargo">
+            Recargo: <span id="recargo">0%</span>
+        </div>
+
+        <button id="calcular">Calcular</button>
+    </div>
+
+    <!-- Librería externa -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
